@@ -205,6 +205,61 @@ h2 {
     flex: 2;
     padding: 10px;
 }
+.certificates-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Adjust the number of certificates per row on smaller screens */
+.certificate {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px; /* Ensures that the certificates don't get too narrow */
+}
+
+.certificate img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certificate h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* For tablet-sized screens and smaller */
+@media (max-width: 768px) {
+    .certificates-grid {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .certificate {
+        flex-basis: 45%; /* Display 2 certificates per row */
+        min-width: auto;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .certificates-grid {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .certificate {
+        flex-basis: 100%; /* Display 1 certificate per row */
+        min-width: auto;
+    }
+}
+
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
