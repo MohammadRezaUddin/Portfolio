@@ -177,7 +177,43 @@ h2 {
 .contact-form .btn:hover {
     background-color: #e74c3c;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-text {
+    flex: 2;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image, .about-text {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     header {
         height: auto;
@@ -199,6 +235,14 @@ h2 {
 
     nav ul li a {
         font-size: 14px;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-left: 0;
+        margin-top: 20px;
     }
 
     .skills-grid, .projects-grid {
