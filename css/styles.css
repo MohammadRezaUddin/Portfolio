@@ -1,3 +1,4 @@
+/* Basic Reset and Universal Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +6,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins for a modern look */
+    background-color: #f4f4f9; /* Light background color */
     color: #333;
 }
+
+/* Header Styles */
 header {
     background: url('bg.jpg') no-repeat center center/cover;
     color: #fff;
@@ -22,7 +25,7 @@ header {
 }
 
 .header-content {
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text readability */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -55,6 +58,7 @@ header {
     transform: scale(1.05);
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -72,6 +76,8 @@ nav ul li a {
     color: #fff;
     font-weight: 500;
 }
+
+/* General Section Styles */
 section {
     padding: 60px 20px;
 }
@@ -88,14 +94,17 @@ h2 {
     font-size: 32px;
 }
 
-.skills-grid, .projects-grid {
+/* Skills and Projects Grid */
+.skills-grid,
+.projects-grid {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.skill, .project {
+.skill,
+.project {
     background-color: #fff;
     padding: 20px;
     text-align: center;
@@ -109,80 +118,135 @@ h2 {
     border-radius: 10px;
 }
 
+/* Contact Section Styles */
 #contact {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: #fff;
-    padding: 60px 20px;
+    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Glossy gradient background */
+    padding: 60px 0;
+    color: white;
+    text-align: center;
 }
 
 #contact h2 {
     font-size: 36px;
-    text-align: center;
     margin-bottom: 20px;
-    color: #fff;
+    font-weight: bold;
 }
 
 #contact p {
-    text-align: center;
     font-size: 18px;
     margin-bottom: 40px;
 }
 
 .contact-form {
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); /* Add a dark background to the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.contact-form input, .contact-form textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-    color: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: #fff;
     outline: none;
+    transition: box-shadow 0.3s ease;
 }
 
-.contact-form textarea {
-    resize: none;
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
     height: 150px;
+    resize: none;
 }
 
-.contact-form .btn {
-    display: inline-block;
-    background-color: #ff4757;
-    color: #fff;
+.btn {
+    background-color: #ff4b2b; /* Vibrant button color */
+    color: white;
     padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-align: center;
     border: none;
+    border-radius: 50px;
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form .btn:hover {
-    background-color: #e74c3c;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.btn:hover {
+    background-color: #ff3c1f;
+    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    header {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .header-content p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        top: 10px;
+        right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        flex-direction: column;
+    }
+}
+
+/* About Section */
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -205,106 +269,86 @@ h2 {
     flex: 2;
     padding: 10px;
 }
-.certificates-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+
+/* Certificates Section */
+#certificates {
+    padding: 50px 0;
+    background-color: #f9f9f9;
 }
 
-/* Adjust the number of certificates per row on smaller screens */
+#certificates h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .certificate {
     background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px; /* Ensures that the certificates don't get too narrow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
 }
 
 .certificate img {
-    max-width: 100%;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .certificate h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-/* For tablet-sized screens and smaller */
+.certificate p {
+    color: #777;
+    font-size: 1em;
+}
+
+/* Responsive Adjustments for Certificates */
 @media (max-width: 768px) {
     .certificates-grid {
-        justify-content: center;
-        gap: 15px;
+        grid-template-columns: 1fr;
     }
 
-    .certificate {
-        flex-basis: 45%; /* Display 2 certificates per row */
-        min-width: auto;
+    .certificate h3 {
+        font-size: 1.2em;
+    }
+
+    .certificate p {
+        font-size: 0.9em;
     }
 }
 
-/* For mobile devices */
-@media (max-width: 480px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .certificates-grid {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .certificate {
-        flex-basis: 100%; /* Display 1 certificate per row */
-        min-width: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-image, .about-text {
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 40px 0;
-    }
-
-    .header-content h1 {
-        font-size: 32px;
-    }
-
-    .header-content p {
-        font-size: 18px;
-    }
-
-    nav ul {
-        top: 10px;
-        right: 10px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-text {
-        padding-left: 0;
-        margin-top: 20px;
-    }
-
-    .skills-grid, .projects-grid {
-        flex-direction: column;
+@media (min-width: 1025px) {
+    .certificates-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+/* Footer Styles */
 footer {
     background-color: #222;
     color: #fff;
@@ -331,6 +375,5 @@ footer {
 
 .social-icons a:hover img {
     filter: grayscale(0%);
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
-
