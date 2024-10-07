@@ -101,8 +101,8 @@ nav ul li a {
 /* Responsive styles for smaller devices */
 @media (max-width: 768px) {
     .tnb {
-        padding: 5px 5px; /* Adjust padding for smaller screens */
-        font-size: 15px; /* Smaller font size for mobile devices */
+        padding: 10px 10px; /* Adjust padding for smaller screens */
+        font-size: 11px; /* Smaller font size for mobile devices */
     }
 }
 
@@ -174,8 +174,8 @@ h2 {
     }
 
     .about-text {
-        order: 1; /* Place the text before the image on small screens */
-        text-align: center; /* Center text for better readability */
+        order: 2; /* Place the text before the image on small screens */
+        text-align: left; /* Center text for better readability */
     }
 
     .about-image img {
@@ -208,7 +208,7 @@ h2 {
 
 .skill,
 .project {
-    background-color: #fff;
+    background-color: #f8c2c2;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
