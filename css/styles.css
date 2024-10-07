@@ -43,7 +43,7 @@ header {
 }
 
 .header-content .btn {
-    background-color: #ff4757;
+    background-color: #21b966;
     color: #fff;
     padding: 15px 40px;
     text-decoration: none;
@@ -54,7 +54,7 @@ header {
 }
 
 .header-content .btn:hover {
-    background-color: #e74c3c;
+    background-color: #086d4f;
     transform: scale(1.05);
 }
 
@@ -76,6 +76,46 @@ nav ul li a {
     color: #fff;
     font-weight: 500;
 }
+.tnb {
+    background-color: #640eee;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 9px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tnb:hover {
+    background-color: #0b1338;
+    box-shadow: 0 8px 20px rgba(18, 11, 58, 0.3);
+}
+
+/* Responsive styles for medium devices (tablets, small laptops) */
+@media (min-width: 768px) {
+    .tnb {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Responsive styles for large devices (desktops, large laptops) */
+@media (min-width: 1024px) {
+    .tnb {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for extra-large devices (larger screens) */
+@media (min-width: 1280px) {
+    .tnb {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
 
 /* General Section Styles */
 section {
@@ -173,7 +213,7 @@ textarea {
 }
 
 .btn {
-    background-color: #ff4b2b; /* Vibrant button color */
+    background-color: #e033a7; /* Vibrant button color */
     color: white;
     padding: 15px 30px;
     border: none;
@@ -184,8 +224,8 @@ textarea {
 }
 
 .btn:hover {
-    background-color: #ff3c1f;
-    box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
+    background-color: #af12bd;
+    box-shadow: 0 8px 20px rgba(59, 20, 50, 0.3);
 }
 
 /* Responsive Styles */
@@ -204,6 +244,7 @@ textarea {
         padding: 12px 20px;
         font-size: 16px;
     }
+  
 
     #contact h2 {
         font-size: 30px;
