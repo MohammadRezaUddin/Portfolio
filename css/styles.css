@@ -13,70 +13,7 @@ body {
 }
 
 /* Header Styles */
-header {
-    background: url('bg.jpg') no-repeat fixed center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding: 20px;
-}
 
-.header-content {
-    background: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-}
-
-.header-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.header-content p {
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
-.header-content .btn {
-    background-color: #21b966; /* CTA button color */
-    color: #fff;
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.header-content .btn:hover {
-    background-color: #086d4f;
-    transform: scale(1.05);
-}
-
-/* Navigation Styles */
-nav ul {
-    list-style: none;
-    display: flex;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-}
 /* Responsive and Attractive CTA Button */
 .tnb {
     background-color: #7637ec; /* CTA button color */
