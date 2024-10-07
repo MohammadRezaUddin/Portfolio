@@ -14,7 +14,7 @@ body {
 
 /* Header Styles */
 header {
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat fixed center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -101,7 +101,7 @@ nav ul li a {
 /* Responsive styles for smaller devices */
 @media (max-width: 768px) {
     .tnb {
-        padding: 8px 5px; /* Adjust padding for smaller screens */
+        padding: 5px 5px; /* Adjust padding for smaller screens */
         font-size: 15px; /* Smaller font size for mobile devices */
     }
 }
