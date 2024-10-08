@@ -262,7 +262,10 @@ footer .social-icons {
 footer .social-icons a img {
     width: 30px;
 }
-
+.social-icons a:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1)
+}
 /* Media Queries */
 @media (max-width: 768px) {
     .about-content {
